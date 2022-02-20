@@ -9,6 +9,8 @@
  *             Commented through code
  *
  * 14/02/2022; Split file into this and CommandHandler.cs
+ * 
+ * 20/02/2022; Uploaded to girhub and finally started using Git!!
  */
 
 using Discord;
@@ -21,7 +23,7 @@ public class Bot
 // HACK: making these values nullable is more trouble than it's worth, so i just bit the bullet and disabled the compiler error
 #pragma warning disable CS8618
     private CommandHandler handler;
-    private static string token = "";
+    private static readonly string token = "";
     public DiscordSocketClient Client { get; private set; }
 #pragma warning restore CS8618
 
