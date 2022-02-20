@@ -25,7 +25,7 @@ public class Bot
     public DiscordSocketClient Client { get; private set; }
 #pragma warning restore CS8618
 
-    public static void Main() => MainAsync().Run();
+    public static Task Main() => instance.MainAsync();
 
     public static Bot Instance { get => instance; }
 
@@ -44,6 +44,7 @@ public class Bot
         Client.Log += LogAsync;
         Client.ButtonExecuted += handler.ButtonHandler;
         await Task.Delay(-1);
+        //ASDFLHASFGLHASDLKSA
 
     }
 
