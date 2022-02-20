@@ -24,7 +24,8 @@ public class Bot
     private static string token = "";
     public DiscordSocketClient Client { get; private set; }
 #pragma warning restore CS8618
-    public static Task Main(string[] args) => instance.MainAsync();
+
+    public static void Main() => MainAsync().Run();
 
     public static Bot Instance { get => instance; }
 
