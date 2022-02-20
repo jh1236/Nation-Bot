@@ -10,7 +10,7 @@
  *
  * 14/02/2022; Split file into this and CommandHandler.cs
  * 
- * 20/02/2022; Uploaded to girhub and finally started using Git!!
+ * 20/02/2022; Uploaded to github and finally started using Git!!
  */
 
 using Discord;
