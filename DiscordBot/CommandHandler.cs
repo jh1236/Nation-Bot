@@ -174,6 +174,7 @@ namespace DiscordBot
 
 
                             // disolve-country
+                            // FixMe: This is a typo, should be dissolve
                             slashBuilder = new SlashCommandBuilder().WithName("disolve-country").WithDescription("Removes your country");
                             await client.Rest.CreateGuildCommand(slashBuilder.Build(), currentGuild.Id);
 
@@ -305,9 +306,9 @@ namespace DiscordBot
                         await command.RespondAsync("Requesting allyship", ephemeral: true);
                         break;
                     }
-
                 // comments are going to get less verbose from here bc the same patterns are continuosly applied
 
+                // FixMe: This is a typo, should be dissolve
                 case "disolve-country":
                     {
                         ulong myId = command.User.Id;
